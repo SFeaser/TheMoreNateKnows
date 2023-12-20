@@ -4,7 +4,7 @@ function playAudio() {
   var voice = document.getElementById("voice");
 
   var selectedVoice = document.getElementById("voice-select").value;
-  voice.src = "sound-effects/voices/" + selectedVoice;
+  voice.src = selectedVoice;
 
   jingle.play();
   voice.play();
