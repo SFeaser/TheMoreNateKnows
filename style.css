@@ -12,9 +12,15 @@ body, html {
 }
 
 button {
-  padding: 15px 30px;
+  padding: 20px;
   font-size: 20px;
   cursor: pointer;
+  border-radius:  50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: rgb(252, 10, 10);
+
 }
 
-/* You can add more styles here to customize your button */
