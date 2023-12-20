@@ -1,12 +1,13 @@
 
 function playAudio() {
-  var jingle = document.getElementById("jingle");
-  var voice = document.getElementById("voice");
+  var jingleSound = document.getElementById("jingle");
+  var voiceSound = document.getElementById("voice");
 
   var selectedVoice = document.getElementById("voice-select").value;
-  voice.src = selectedVoice;
+  voiceSound.src = "sound-effects/voices/" + selectedVoice;
 
-  jingle.play();
-  voice.play();
+  jingleSound.play();
+  voiceSound.play();
 }
+
 
