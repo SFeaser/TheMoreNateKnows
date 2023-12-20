@@ -8,9 +8,32 @@
 </head>
 <body>
     <div class="button-container">
-        <button onclick="playAudio()">PUSH</button>
-        <audio id="jingle" src="sound-effects/the-more-you-know-sound.mp3"></audio>
-        <audio id="voice" src="sound-effects/Patrick.mp3"></audio>
+      <select id="voice-select">
+        <option value="sound-effects/voices/Amber.mp3">Amber</option>
+        <option value="sound-effects/voices/Ashely.mp3">Ashely</option>
+        <option value="sound-effects/voices/Danielle.mp3">Danielle</option>
+        <option value="sound-effects/voices/Davis.mp3">Davis</option>
+        <option value="sound-effects/voices/Den.mp3">Den</option>
+        <option value="sound-effects/voices/Edith.mp3">Edith</option>
+        <option value="sound-effects/voices/Elijah.mp3">Elijah</option>
+        <option value="sound-effects/voices/Evelyn.mp3">Evelyn</option>
+        <option value="sound-effects/voices/Joanna.mp3">Joanna</option>
+        <option value="sound-effects/voices/Kelsy.mp3">Kelsey</option>
+        <option value="sound-effects/voices/Kimberly.mp3">Kimberly</option>
+        <option value="sound-effects/voices/Maria.mp3">Maria</option>
+        <option value="sound-effects/voices/Mercy.mp3">Mercy</option>
+        <option value="sound-effects/voices/Mikalah.mp3">Mikalah</option>
+        <option value="sound-effects/voices/Mike.mp3">Mike</option>
+        <option value="sound-effects/voices/Oliver.mp3">Oliver</option>
+        <option value="sound-effects/voices/Robert.mp3">Robert</option>
+        <option value="sound-effects/voices/Sara.mp3">Sara</option>
+        <option value="sound-effects/voices/Sophia.mp3">Sophia</option>
+        <option value="sound-effects/voices/Terry.mp3">Terry</option>
+        <option value="sound-effects/voices/Violet.mp3">Violet</option>
+      </select>
+      <button onclick="playAudio()">PUSH</button>
+      <audio id="jingle" src="sound-effects/the-more-you-know-sound.mp3"></audio>
+      <audio id="voice"></audio>
     </div>
     <script src="scripts.js"></script>
 </body>
