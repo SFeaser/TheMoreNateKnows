@@ -9,13 +9,11 @@
 
 </head>
 <body>
-  <div id="overlay" class="overlay">
-    <img src="the-more-you-gif.gif" alt="Loading..." id="loading-gif">
-  </div>
   <div class="settings-icon">
     <i class="fas fa-cog" onclick="toggleDropdown()" ></i>
     <div class="dropdown-content" id="dropdown-content" >
-      <p class="dropdown-title">Select Voice</p>
+      <div class="dropdown-item">
+        <label>Select Voice</label>
         <select id="voice-select">
           <option value="Amber.mp3">Amber</option>
           <option value="Ashley.mp3">Ashley</option>
@@ -40,12 +38,19 @@
           <option value="Terry.mp3">Terry</option>
           <option value="Violet.mp3">Violet</option>
         </select>
+        </div>
+        <div class="dropdown-item">
+          <label>Display GIF</label>
+          <input id="gif-checkbox" type="checkbox" checked="true"/>
+        </div>
     </div>
+
+  </div>
+  <div id="overlay" class="overlay">
+    <img id="loading-gif">/>
   </div>
   <button id="main-btn">PUSH</button>
 
-
-  </select>
   <audio id="jingle" src="sound-effects/the-more-you-know-sound.mp3"></audio>
   <audio id="voice"></audio>
   <script src="scripts.js"></script>

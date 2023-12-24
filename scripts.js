@@ -10,16 +10,27 @@ function resetAudio() {
   document.getElementById("voice").load();
 }
 
+function showGif() {
+  if (document.getElementById("gif-checkbox").checked) {
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("loading-gif").src = "the-more-you-gif.gif"
+  }
+}
+
+function closeGif() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("loading-gif").src = "";
+}
+
+
 function playVoice() {
   document.getElementById("voice").src = getSelectedVoice();
   document.getElementById("voice").play();
 }
 
+
 function playJingle() {
   document.getElementById("jingle").play();
-    // setTimeout(function() {
-      document.getElementById("overlay").style.display = "none";
-  // }, 0);
 }
 
 function playAudio() {
@@ -29,15 +40,13 @@ function playAudio() {
     playVoice();
     clearTimeout(timer);
   }, 1000);
-
-  // setTimeout(function() {
-        document.getElementById("overlay").style.display = "block";
-  // }, 0);
 }
 
+// Events
 document.getElementById('main-btn').addEventListener('click', playAudio);
 document.getElementById('voice-select').addEventListener('change', resetAudio);
-
+document.getElementById('jingle').addEventListener('play', showGif);
+document.getElementById('voice').addEventListener('ended', closeGif);
 
 // function toggleDropdown() {
 //   var dropdown = document.getElementById("dropdown-content");
